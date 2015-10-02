@@ -1,0 +1,6 @@
+#compdef napi
+
+_arguments -s -S \
+    "-l+[specify language]:languague:(PL ENG)" \
+    "*:video file:_files -g \
+         '*.(asf|asx|avi|flac|flv|m1v|m2p|m2v|m4v|mjpg|mka|mkv|mov|mp3|mp4|mpe|mpeg|mpg|ogg|ogm|qt|rm|vob|wav|webm|wma|wmv)(-.)'"
