@@ -57,7 +57,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Android/
 # export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR=vim
 export PATH=~/bin:/usr/texbin:$PATH
-export HOMEBREW_GITHUB_API_TOKEN=08423d3674b699185170028828a29e9b9660fe34
+
+if [[ -e $ZSH/custom/private.zsh ]]; then
+	source $ZSH/custom/private.zsh
+fi
 
 source $ZSH/oh-my-zsh.sh
 
