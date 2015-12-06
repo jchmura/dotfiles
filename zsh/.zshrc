@@ -53,16 +53,19 @@ plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Android/sdk/platform-tools"
+#export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Android/sdk/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR=vim
-export PATH=~/bin:/usr/texbin:$PATH
 
 if [[ -e $ZSH/custom/private.zsh ]]; then
 	source $ZSH/custom/private.zsh
 fi
 
+export PATH="$HOME/bin:/usr/local/sbin:$PATH:$HOME/Library/Android/sdk/platform-tools"
 source $ZSH/oh-my-zsh.sh
+
+# TeX
+eval `/usr/libexec/path_helper -s`
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -93,3 +96,9 @@ test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_in
 
 PERL_MB_OPT="--install_base \"/Users/kuba/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/kuba/perl5"; export PERL_MM_OPT;
+
+export LPASS_AGENT_TIMEOUT=0
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
