@@ -102,3 +102,4 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
