@@ -57,6 +57,10 @@ plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime)
 # export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR=vim
 
+if [[ ! -d $ZSH/custom ]]; then
+    $HOME/bin/restore_custom_omz.sh
+fi
+
 if [[ -e $ZSH/custom/private.zsh ]]; then
 	source $ZSH/custom/private.zsh
 fi
@@ -103,3 +107,6 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
+export PATH=${PATH}:${JBOSS_HOME}/bin

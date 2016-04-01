@@ -1,6 +1,2 @@
 alias pid='ps aux | grep -v grep | grep'
 alias vi='vim'
-alias xclip='xclip -selection c'
-#alias root='root -l'
-alias htop='sudo /usr/local/bin/htop'
-alias mplayerx='open -a /Applications/MPlayerX.app'
