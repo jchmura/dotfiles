@@ -49,7 +49,7 @@ ZSH_THEME="chmurzak-time"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime)
+plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime gradle)
 
 # User configuration
 
