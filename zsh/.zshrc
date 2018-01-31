@@ -49,7 +49,7 @@ ZSH_THEME="chmurzak-time"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime gradle docker)
+plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime gradle docker docker-compose docker-machine mvn)
 
 # User configuration
 
@@ -65,7 +65,7 @@ if [[ -e $ZSH/custom/private.zsh ]]; then
 	source $ZSH/custom/private.zsh
 fi
 
-export PATH="$HOME/bin:/usr/local/sbin:$PATH:$HOME/Library/Android/sdk/platform-tools"
+export PATH="$HOME/bin:$HOME/.fabric8/bin:/usr/local/sbin:$PATH:$HOME/Library/Android/sdk/platform-tools"
 source $ZSH/oh-my-zsh.sh
 
 # TeX
