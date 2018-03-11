@@ -1,7 +1,3 @@
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -15,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " original repos on GitHub
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
