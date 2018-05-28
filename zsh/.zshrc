@@ -96,6 +96,8 @@ eval `/usr/libexec/path_helper -s`
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 PERL_MB_OPT="--install_base \"/Users/kuba/perl5\""; export PERL_MB_OPT;
@@ -108,5 +110,5 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
-export PATH=${PATH}:${JBOSS_HOME}/bin
+#export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
+#export PATH=${PATH}:${JBOSS_HOME}/bin
