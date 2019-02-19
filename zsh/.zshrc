@@ -110,5 +110,6 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
+export PATH=$PATH:$(go env GOPATH)/bin
 #export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
 #export PATH=${PATH}:${JBOSS_HOME}/bin
