@@ -52,6 +52,7 @@ ZSH_THEME="chmurzak-time"
 plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime gradle docker docker-compose docker-machine mvn)
 
 # User configuration
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 #export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/Library/Android/sdk/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,8 +99,6 @@ eval `/usr/libexec/path_helper -s`
 
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
-
 PERL_MB_OPT="--install_base \"/Users/kuba/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/kuba/perl5"; export PERL_MM_OPT;
 
@@ -113,3 +112,5 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export PATH=$PATH:$(go env GOPATH)/bin
 #export JBOSS_HOME=/usr/local/opt/wildfly-as/libexec
 #export PATH=${PATH}:${JBOSS_HOME}/bin
+
+export JAVA_HOME=$(/usr/libexec/java_home)
