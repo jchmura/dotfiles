@@ -43,13 +43,13 @@ ZSH_THEME="chmurzak-time"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.dotfiles/zsh/custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize cp extract osx brew brew-cask themes sublime gradle docker docker-compose docker-machine mvn)
+plugins=(git colorize cp extract osx brew themes sublime gradle docker docker-compose docker-machine mvn)
 
 # User configuration
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
@@ -114,3 +114,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 #export PATH=${PATH}:${JBOSS_HOME}/bin
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+function stream() {
+    streamlink "$1" best --hls-audio-select '*'
+}
